@@ -7,14 +7,26 @@
 
 <!-- badges: end -->
 
-preciosargentina es un paquete de R que contiene datasets con
-información sobre precios de productos en Argentina. Contiene dos
-datasets:
+**preciosargentina** es un paquete de R que contiene datasets con
+información sobre precios de productos en Argentina relevados por [Open
+Data Córdoba](https://twitter.com/opendatacba) de la plataforma
+<https://www.preciosclaros.gob.ar/>.
+
+Contiene dos datasets:
 
   - **precios\_maximos:** dataset con los precios máximos fijados por el
     Gobierno Nacional durante la emergencia sanitaria por el
     coronavirus. [Más
     info…](https://www.argentina.gob.ar/preciosmaximos)
+  - **sucursales:** listado de sucursales geolocalizadas en la República
+    Argentina. (puntos de venta)
+  - **productos:** listado de productos a la venta en la República
+    Argentina con su correspondiente EAN.
+  - **precios:** listado de precios relevados en diferentes sucursales a
+    través de la plataforma Precios Claros. Debido a limitaciones en la
+    consulta a la plataforma estos precios son relevados semanalmente
+    para sucursales testigos en cada provincia. Dicha sucursal puede
+    variar de semana en semana.
 
 ## Instalación
 
@@ -76,4 +88,20 @@ sucursales %>%
 #> 4 10-1-112    Hipermercado Carrefour 20 De Febrero 37         Salta             
 #> 5 10-1-12     Hipermercado Carrefour Av. Don Bosco 2680       San Justo         
 #> 6 10-1-123    Hipermercado Carrefour Gral. Acha 32            San Juan
+```
+
+### Precios
+
+``` r
+precios %>% 
+  head()
+#> # A tibble: 6 x 4
+#>   fecha_relevamiento id_producto   precio id_sucursal
+#>   <date>             <chr>          <dbl> <chr>      
+#> 1 2020-04-13         0000000001663   29.9 2-1-014    
+#> 2 2020-04-13         0000000002288   29.9 2-1-032    
+#> 3 2020-04-13         0000000002288   39.9 2-1-096    
+#> 4 2020-04-13         0000000205870  500.  9-1-686    
+#> 5 2020-04-13         0000000205870  520.  9-2-248    
+#> 6 2020-04-13         0000000205870  540.  9-2-42
 ```

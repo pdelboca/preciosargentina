@@ -58,3 +58,18 @@
 #'   }
 #' @source \url{https://www.kaggle.com/tinnqn/precios-claros-precios-de-argentina}
 "productos"
+
+#' Precios
+#'
+#' Listado de precios de Productos a la venta en Argentina por sucursal de
+#' venta obtenidos de la plataforma Precios Claros.
+#'
+#' @format Un data frame con 4 variables:
+#' \describe {
+#'   \item{fecha_relevamiento}{Fecha en la cual se relevo el precio}
+#'   \item{id_producto}{codigo EAN del producto}
+#'   \item{precio}{precio de venta del producto en la sucursal}
+#'   \item{id_sucursal}{id de la sucursal}
+#'   }
+#' @source \url{https://www.kaggle.com/tinnqn/precios-claros-precios-de-argentina}
+"precios"
