@@ -31,14 +31,28 @@ Se puede instalar este paquete directamente desde github:
 devtools::install_github("pdelboca/preciosargentina")
 ```
 
-## Example
+## Ejemplo de los Datasets
 
-This is a basic example which shows you how to solve a common problem:
+### Precios Máximos
 
-```{r example}
+```{r precios-maximos}
 library(dplyr, warn.conflicts = F)
 library(preciosargentina)
 precios_maximos %>% 
   select(id_producto, producto, precio_sugerido) %>% 
   head()
 ```
+
+### Productos
+```{r productos}
+productos %>% 
+  head()
+```
+
+### Sucursales
+```{r sucursales}
+sucursales %>% 
+  select(id_sucursal, bandera, direccion, localidad) %>% 
+  head()
+```
+
