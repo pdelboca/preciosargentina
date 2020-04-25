@@ -1,0 +1,14 @@
+Package: preciosargentina
+Type: Package
+Title: Datasets con Precios de Productos en Argentina
+Version: 0.1.0
+Author: Patricio Del Boca
+Maintainer: Patricio Del Boca <pdelboca@mail.com>
+Description: Conjunto de datasets con precios de productos en Argentina
+    precios_maximos contiene los precios maximos fijados por el gobierno.
+    precios_claros contiene precios scrapeados del portal de Precios Claros.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)

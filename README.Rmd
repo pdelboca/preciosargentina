@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# preciosargentina
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+preciosargentina es un paquete de R que contiene datasets con información sobre
+precios de productos en Argentina. Contiene dos datasets:
+
+* **precios_maximos:** dataset con los precios máximos fijados por el Gobierno Nacional durante la emergencia sanitaria por el coronavirus. [Más info...](https://www.argentina.gob.ar/preciosmaximos)
+
+## Instalación
+
+Se puede instalar este paquete directamente desde github:
+
+``` r
+devtools::install_github("pdelboca/preciosargentina")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(dplyr, warn.conflicts = F)
+library(preciosargentina)
+precios_maximos %>% 
+  select(id_producto, producto, precio_sugerido) %>% 
+  head()
+```
