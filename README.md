@@ -12,7 +12,7 @@ información sobre precios de productos en Argentina relevados por [Open
 Data Córdoba](https://twitter.com/opendatacba) de la plataforma
 <https://www.preciosclaros.gob.ar/>.
 
-Contiene dos datasets:
+Contiene varios datasets:
 
   - **precios\_maximos:** dataset con los precios máximos fijados por el
     Gobierno Nacional durante la emergencia sanitaria por el
