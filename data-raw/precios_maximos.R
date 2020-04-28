@@ -44,6 +44,8 @@ if (!file.exists('data-raw/precios-maximos.csv')) {
 precios_maximos <- read_csv('data-raw/precios-maximos.csv') %>%
   rename_all(tolower) %>%
   rename(precio_sugerido = `precio sugerido`) %>%
-  select(id_producto, producto, precio_sugerido, marca, categoria, subcategoria, provincia, region, producto_s_tilde)
+  select(id_producto, producto, precio_sugerido, marca, categoria, subcategoria, provincia, region, producto_s_tilde) %>%
+  mutate(provincia = replace(provincia, provincia == 'CABA', 'Ciudad Autónoma de Buenos Aires'))
+
 
 usethis::use_data(precios_maximos, compress = "xz", overwrite = T)
