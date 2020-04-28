@@ -73,3 +73,15 @@
 #'   }
 #' @source \url{https://www.kaggle.com/tinnqn/precios-claros-precios-de-argentina}
 "precios"
+
+#' Provincias
+#'
+#' Listado de precios de provincias argentinas con su código ISO 3166-2:AR
+#'
+#' @format Un data frame con 2 variables:
+#' \describe {
+#'   \item{ido_provincia}{Código ISO 3166-2:AR de la Provincia}
+#'   \item{provincia}{Nombre de la Provincia}
+#'   }
+#' @source \url{https://es.wikipedia.org/wiki/ISO_3166-2:AR}
+"provincias"

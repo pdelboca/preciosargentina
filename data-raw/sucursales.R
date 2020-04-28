@@ -14,6 +14,7 @@ sucursales <- read_csv('data-raw/sucursales.csv') %>%
     id_bandera = banderaId,
     bandera = banderaDescripcion,
     comercio_razon_social = comercioRazonSocial,
+    id_provincia = provincia,
     nombre_sucursal = sucursalNombre,
     tipo_sucursal = sucursalTipo,
     latitud = lat,

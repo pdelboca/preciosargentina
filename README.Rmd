@@ -27,6 +27,7 @@ Contiene dos datasets:
 * **sucursales:** listado de sucursales geolocalizadas en la República Argentina. (puntos de venta)
 * **productos:** listado de productos a la venta en la República Argentina con su correspondiente EAN.
 * **precios:** listado de precios relevados en diferentes sucursales a través de la plataforma Precios Claros. Debido a limitaciones en la consulta a la plataforma estos precios son relevados semanalmente para sucursales testigos en cada provincia. Dicha sucursal puede variar de semana en semana.
+* **provincias:** listado de provincias argentinas con su correspondiente código ISO 3166-2:AR.
 
 ## Instalación
 
@@ -66,3 +67,11 @@ sucursales %>%
 precios %>% 
   head()
 ```
+
+
+### Provincias
+```{r provincias}
+provincias %>% 
+  head()
+```
+

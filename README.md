@@ -27,6 +27,8 @@ Contiene dos datasets:
     consulta a la plataforma estos precios son relevados semanalmente
     para sucursales testigos en cada provincia. Dicha sucursal puede
     variar de semana en semana.
+  - **provincias:** listado de provincias argentinas con su
+    correspondiente código ISO 3166-2:AR.
 
 ## Instalación
 
@@ -104,4 +106,20 @@ precios %>%
 #> 4 2020-04-13         0000000205870  500.  9-1-686    
 #> 5 2020-04-13         0000000205870  520.  9-2-248    
 #> 6 2020-04-13         0000000205870  540.  9-2-42
+```
+
+### Provincias
+
+``` r
+provincias %>% 
+  head()
+#> # A tibble: 6 x 2
+#>   id_provincia provincia                      
+#>   <chr>        <chr>                          
+#> 1 AR-A         Salta                          
+#> 2 AR-B         Provincia de Buenos Aires      
+#> 3 AR-C         Ciudad Autónoma de Buenos Aires
+#> 4 AR-D         San Luis                       
+#> 5 AR-E         Entre Ríos                     
+#> 6 AR-F         La Rioja
 ```
